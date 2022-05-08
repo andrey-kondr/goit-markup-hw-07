@@ -13,13 +13,12 @@
     visibility: hidden;
     transition: opacity 250ms $mainAnimation,
     visibility 250ms $mainAnimation;
-}
 
-/* скрывает модальное окно с возможностью кликать сквозь него */
-.backdrop.is-hidden {
-    opacity: 1;
-    pointer-events: visible;
-    visibility: visible;
+    &.is-hidden {
+        opacity: 1;
+        pointer-events: visible;
+        visibility: visible;
+    }
 }
 
 .modal {
@@ -56,10 +55,10 @@
     border-radius: 50%;
     cursor: pointer;
     fill: currentColor;
-}
 
-.modal-button:hover {
-    fill: $accentColor;
-    transition: border-color 250ms $mainAnimation,
-    fill 250ms $mainAnimation;
+    &:hover {
+        fill: $accentColor;
+        transition: border-color 250ms $mainAnimation,
+        fill 250ms $mainAnimation;
+    }
 }

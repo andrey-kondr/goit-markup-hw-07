@@ -1,17 +1,17 @@
-.main-nav>.logo {
+.logo {
+    display: inline-block;
+    color: $accentColor;
+}
+
+.main-nav .logo {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.logo {
-    display: inline-block;
-    color: $accentColor;
-}
-
-.logo--black {
-    color: $secondaryTextColor;
+.address-area .logo {
+    margin-bottom: 20px;
 }
 
 .logo,
@@ -24,10 +24,10 @@
     letter-spacing: 0.03em;
 }
 
-.logo--white {
-    color: $dutyWhiteColor;
+.logo--black {
+    color: $secondaryTextColor;
 }
 
-.address-area .logo {
-    margin-bottom: 20px;
+.logo--white {
+    color: $dutyWhiteColor;
 }

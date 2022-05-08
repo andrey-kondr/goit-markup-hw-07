@@ -2,29 +2,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
 
-.contacts__item:not(:last-child) {
-    margin-right: 50px;
-}
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
 
-.contacts__link {
-    display: flex;
-    align-items: center;
+    &__link {
+        display: flex;
+        align-items: center;
 
-    color: $primaryTextColor;
-    fill: $primaryTextColor;
-}
+        color: $primaryTextColor;
+        fill: $primaryTextColor;
+    }
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: $accentColor;
-    fill: $accentColor;
+    &__link:hover,
+    &__link:focus {
+        color: $accentColor;
+        fill: $accentColor;
 
-    transition: color 250ms $mainAnimation;
-}
+        transition: color 250ms $mainAnimation;
+    }
 
-.contacts__icon {
-    margin-right: 10px;
-    vertical-align: middle;
+    &__icon {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 }

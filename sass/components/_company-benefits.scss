@@ -5,38 +5,38 @@
 
 .benefits {
     display: flex;
-}
 
-.benefits__card {
-    width: calc((100% - 90px) / 4 );
-    margin-right: 30px;
-}
+    &__card {
+        width: calc((100% - 90px) / 4 );
+        margin-right: 30px;
+    }
 
-.benefits__card:last-child {
-    margin-right: 0;
-}
+    &__card:last-child {
+        margin-right: 0;
+    }
 
-.benefits__icon-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__icon-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    height: 120px;
-    margin-bottom: 30px;
-    
-    background-color: $secondaryFontColor;
-    text-align: center;
-}
+        height: 120px;
+        margin-bottom: 30px;
+        
+        background-color: $secondaryFontColor;
+        text-align: center;
+    }
 
-.benefits__name {
-    margin-bottom: 10px;
+    &__name {
+        margin-bottom: 10px;
 
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
 
-.benefits__description {
-    line-height: 1.7;
+    &__description {
+        line-height: 1.7;
+    }
 }

@@ -17,22 +17,22 @@
 .address {
     line-height: 1.7;
     font-style: normal;
-}
 
-.address__item:not(:last-child) {
+    &__item:not(:last-child) {
     margin-bottom: 9px;
-}
+    }
 
-.address__postal {
-    color: white;
-}
+    &__postal {
+        color: white;
+    }
 
-.address__point {
-    color: $serviceTextColor;
-    transition: color 250ms $mainAnimation;
-}
+    &__point {
+        color: $serviceTextColor;
+        transition: color 250ms $mainAnimation;
+    }
 
-.address__point:hover,
-.address__point:focus {
-    color: $accentColor;
+    &__point:hover,
+    &__point:focus {
+        color: $accentColor;
+    }
 }

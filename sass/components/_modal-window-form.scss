@@ -65,21 +65,20 @@
     transition: border-color 250ms $mainAnimation;
     outline: none;
     
-    /* make cursor color */
-    /* caret-color: $accentColor; */
+    // make cursor color
+    // caret-color: $accentColor;
     
-}
+    &:hover, 
+    &:focus {
+        border-color: $accentColor;
+    }
 
-.comment:hover, 
-.comment:focus {
-    border-color: $accentColor;
-}
-
-.comment::placeholder {
-    color: $placeholderColor;
-    margin-left: 16px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
+    &::placeholder {
+        color: $placeholderColor;
+        margin-left: 16px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+    }
 }
 
 .checkbox-label {
@@ -102,17 +101,6 @@
     overflow: hidden;
 }
 
-.checkbox:checked ~ .icon-checkbox {
-    background-color: $accentColor;
-    border-color: $accentColor;
-
-    background-image: url('../images/check.svg');
-    background-size: contain;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
 .icon-checkbox {
     position: absolute;
     top: 0;
@@ -124,6 +112,17 @@
     height: 15px;
     border: 2px solid $secondaryTextColor;
     border-radius: 2px;
+
+    .checkbox:checked ~ & {
+        background-color: $accentColor;
+        border-color: $accentColor;
+
+        background-image: url('../images/check.svg');
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
 
 .contract-conditions {
@@ -152,10 +151,10 @@
     cursor: pointer;
     transition: box-shadow 250ms $mainAnimation,
     background-color 250ms $mainAnimation;
-}
 
-.send-button:hover,
-.send-button:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

@@ -3,39 +3,39 @@
     justify-content: center;
 
     height: 44px;
-}
 
-.socials__item {
-    margin-right: 10px;
-}
+    &__item {
+        margin-right: 10px;
+    }
 
-.socials__item:last-child {
-    margin-right: 0px;
-}
+    &__item:last-child {
+        margin-right: 0px;
+    }
 
-.socials__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    width: 44px;
-    height: 44px;
+        width: 44px;
+        height: 44px;
 
-    fill: $iconsColor;
+        fill: $iconsColor;
 
-    transition: background-color 250ms $mainAnimation,
-    fill 250ms $mainAnimation;
+        transition: background-color 250ms $mainAnimation,
+        fill 250ms $mainAnimation;
 
-    border-radius: 50%;
-}
+        border-radius: 50%;
+    }
 
-.socials__link:hover,
-.socials__link:focus {
-    background-color: $accentColor;
-    fill: $dutyWhiteColor;
-}
+    &__link:hover,
+    &__link:focus {
+        background-color: $accentColor;
+        fill: $dutyWhiteColor;
+    }
 
-.socials__icon {
-    width: 20px;
-    height: 20px;
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
 }

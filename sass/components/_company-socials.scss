@@ -7,22 +7,22 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    .socials__icon {
+        fill: $dutyWhiteColor;
+    }
+
+    .socials__link {
+        background-color: $footerIconsFontColor;
+        transition: background-color 250ms $mainAnimation;
+    }
+
+    .socials__link:hover,
+    .socials__link:focus {
+        background-color: $accentColor;
+    }
 }
 
 .join-us-slogan {
     margin-bottom: 20px;
-}
-
-.join-us .socials__icon {
-    fill: $dutyWhiteColor;
-}
-
-.join-us .socials__link {
-    background-color: $footerIconsFontColor;
-    transition: background-color 250ms $mainAnimation;
-}
-
-.join-us .socials__link:hover,
-.join-us .socials__link:focus {
-    background-color: $accentColor;
 }

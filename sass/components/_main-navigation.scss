@@ -1,66 +1,66 @@
 .main-nav {
     display: flex;
     align-items: center;
-}
 
-.main-nav__list {
-    display: flex;
-    justify-content: center;
+    &__list {
+        display: flex;
+        justify-content: center;
 
-    margin-left: 93px;
-}
+        margin-left: 93px;
+    }
 
-.main-nav__item:not(:last-child) {
-    margin-right: 50px;
-}
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
 
-.main-nav__item {   
-    height: 80px;
-}
+    &__item {   
+        height: 80px;
+    }
 
-.main-nav__link {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-    height: 100%;
+    &__link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
 
-    color: $secondaryTextColor;
-    transition: color 250ms $mainAnimation;
-}
+        color: $secondaryTextColor;
+        transition: color 250ms $mainAnimation;
+    }
 
-.main-nav__link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    &__link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
 
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    background-color: $accentColor;
-    border-radius: 2px;
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-color: $accentColor;
+        border-radius: 2px;
 
-    transform: translateY(+50%);
-    transition: opacity 250ms $mainAnimation;
-    opacity: 0;
-}
+        transform: translateY(+50%);
+        transition: opacity 250ms $mainAnimation;
+        opacity: 0;
+    }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-    color: $accentColor;
-}
+    &__link:hover,
+    &__link:focus {
+        color: $accentColor;
+    }
 
-.main-nav__link:hover::after {
-    opacity: 1;
+    &__link:hover::after {
+        opacity: 1;
+    }
 }
 
 .current {
     color: $accentColor;
-}
 
-.current.main-nav__link::after {
-    opacity: 1;
+    &.main-nav__link::after {
+        opacity: 1;
+}
 }

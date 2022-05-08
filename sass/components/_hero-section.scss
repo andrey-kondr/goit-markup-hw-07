@@ -19,43 +19,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
 
-.hero__title {
-    margin-bottom: 30px;
+    &__title {
+        margin-bottom: 30px;
 
-    color: $dutyWhiteColor;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+        color: $dutyWhiteColor;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 
-.hero__button {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    &__button {
+        display: flex;
+        align-items: center;
+        text-align: center;
 
-    margin: 0 auto;
-    padding: 10px 32px;
+        margin: 0 auto;
+        padding: 10px 32px;
 
-    background-color: $accentColor;
-    color: $dutyWhiteColor;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: color 250ms $mainAnimation;
-}
+        background-color: $accentColor;
+        color: $dutyWhiteColor;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: color 250ms $mainAnimation;
+    }
 
-.hero__button:hover,
-.hero__button:focus {
-    color: $serviceTextColor;
+    &__button:hover,
+    &__button:focus {
+        color: $serviceTextColor;
+    }
 }
