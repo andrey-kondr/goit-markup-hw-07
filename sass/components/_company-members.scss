@@ -1,0 +1,45 @@
+.company-members {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: $secondaryFontColor;
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.members__item {
+    background-color: $dutyWhiteColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.members__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.members__card {
+    padding: 30px 20px;
+}
+
+.members__unit {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.members__speciality {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}

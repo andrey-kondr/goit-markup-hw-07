@@ -1,0 +1,42 @@
+.company-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    height: 92px;
+}
+
+.clients__item {
+    margin-right: 30px;
+}
+
+.clients__item:last-child {
+    margin-right: 0px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    fill: $iconsColor;
+    transition: fill 250ms $mainAnimation,
+    color 250ms $mainAnimation;
+
+    border: 1px solid $iconsColor;
+    border-radius: 4px;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    fill: $accentColor;
+
+    border: 1px solid $accentColor;
+    border-radius: 4px;
+}
